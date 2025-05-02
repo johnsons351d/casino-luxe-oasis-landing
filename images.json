@@ -1,13 +1,13 @@
 
 {
   "header": {
-    "logo": "https://images.unsplash.com/photo-1635003913011-95971abba560?w=300&h=100&fit=crop&q=80&auto=format",
-    "hero": "https://images.unsplash.com/photo-1578174551474-4babdf84bf74?w=1920&h=1080&fit=crop&q=80"
+    "logo": "https://lofrev.net/wp-content/photos/2016/08/random_logo_1.png",
+    "hero": "https://cdn.luxatic.com/wp-content/uploads/2020/10/Bellagio-Las-Vegas-1-scaled.jpg"
   },
   "casinos": [
     {
       "name": "The Bellagio",
-      "image": "https://images.unsplash.com/photo-1562516710-31a38a5c1091?w=600&h=400&fit=crop&q=80",
+      "image": "https://media.cntraveler.com/photos/5d7ffcd47ffc50000818cb99/16:9/w_2560%2Cc_limit/Bellagio_2019_Bellagio_Main_Pool_Anthony_Mair.jpg",
       "country": "USA",
       "rating": 5,
       "description": "World-famous luxury resort with iconic fountain shows and upscale amenities.",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Marina Bay Sands",
-      "image": "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=600&h=400&fit=crop&q=80",
+      "image": "https://www.arup.com/globalassets/images/projects/m/marina-bay-sands-integrated-resort/marina-bay-sands-integrated-resort-header.webp",
       "country": "Singapore",
       "rating": 5,
       "description": "Architectural marvel with the world's largest rooftop infinity pool and panoramic views.",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Monte Carlo Casino",
-      "image": "https://images.unsplash.com/photo-1603199506016-b9a594b593c0?w=600&h=400&fit=crop&q=80",
+      "image": "https://www.officeescapeartist.com/wp-content/uploads/2021/11/Monte-Carlo-Casino-Monaco.jpg",
       "country": "Monaco",
       "rating": 4.5,
       "description": "Historic 19th-century casino offering European elegance and sophistication.",
@@ -31,7 +31,7 @@
     },
     {
       "name": "Wynn Las Vegas",
-      "image": "https://images.unsplash.com/photo-1628527304948-06157ca5e3af?w=600&h=400&fit=crop&q=80",
+      "image": "https://travelnevada.com/wp-content/uploads/2020/10/WE_Featured.jpg",
       "country": "USA",
       "rating": 5,
       "description": "Luxury resort featuring award-winning restaurants and a spectacular lake show.",
@@ -39,7 +39,7 @@
     },
     {
       "name": "Caesars Palace",
-      "image": "https://images.unsplash.com/photo-1571169755272-b89129b55d29?w=600&h=400&fit=crop&q=80",
+      "image": "https://media.cntraveler.com/photos/673f75645afe9977919e195c/16:9/w_2560%2Cc_limit/Caesars%2520Palace%2520Exterior.jpg",
       "country": "USA",
       "rating": 4.5,
       "description": "Iconic Roman-themed resort with celebrity chef restaurants and opulent gaming areas.",
@@ -47,7 +47,7 @@
     },
     {
       "name": "Crown Melbourne",
-      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&q=80",
+      "image": "https://www.victoriahotel.com.au/wp-content/uploads/sites/188/2023/10/shutterstock_776167174-2700x1400.jpg",
       "country": "Australia",
       "rating": 4.5,
       "description": "Australia's premier integrated resort with world-class gaming, dining, and entertainment.",
@@ -73,36 +73,36 @@
     }
   ],
   "gallery": [
-    "https://images.unsplash.com/photo-1606744824163-985d376605aa?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1586221266207-4bc9ee57e6cf?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1596838132663-69be99894bd1?w=1200&h=800&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=1200&h=800&fit=crop&q=80"
+    "https://res.cloudinary.com/dpzz1zrli/images/f_auto,q_auto/v1729618272/crown-melbourne-australia/crown-melbourne-australia.jpg?_i=AA",
+    "https://luxuriaapartments.com.au/wp-content/uploads/2018/01/cc4.jpg",
+    "https://www.aspfloors.com.au/wp-content/uploads/2018/02/crown-casino-melbourne.jpg",
+    "https://www.crownresorts.com.au/getmedia/ba4660f7-8b15-427b-9332-71af05923b5c/220330-Crown-Perth-Resorts-AerialSunset-1200x771.jpg",
+    "https://d31nhj1t453igc.cloudfront.net/cloudinary/2022/Apr/11/fGVg6nrS8KePK9JV7qaf.jpg",
+    "https://content.api.news/v3/images/bin/b84366d76f3ccdd4e81f1bf1c304002e"
   ],
   "events": [
     {
       "title": "Million Dollar Poker Tournament",
       "date": "2025-06-15",
-      "image": "https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=600&h=400&fit=crop&q=80",
+      "image": "https://www.reviewjournal.com/wp-content/uploads/2022/12/17269523_web1_BET-POKER_122022ev_019.jpg?w=1200",
       "description": "Join the world's elite poker players for our annual high-stakes tournament."
     },
     {
       "title": "Summer Gala Night",
       "date": "2025-07-21",
-      "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=400&fit=crop&q=80",
+      "image": "https://events.nantucket.net/wp-content/uploads/2022/02/2897621993_aan_2021-art-auction-gala_850x850@2x.jpg",
       "description": "An exclusive evening of entertainment, fine dining, and special gaming events."
     },
     {
       "title": "Celebrity Blackjack Showdown",
       "date": "2025-09-03",
-      "image": "https://images.unsplash.com/photo-1606761568539-8272a758e5b9?w=600&h=400&fit=crop&q=80",
+      "image": "https://gamblingcollective.com/wp-content/uploads/2020/09/celebrity-gamblers-featured-image.png",
       "description": "Watch celebrities compete against our top dealers for charity prizes."
     },
     {
       "title": "New Year's Eve Extravaganza",
       "date": "2025-12-31",
-      "image": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop&q=80",
+      "image": "https://media.timeout.com/images/106220030/750/422/image.jpg",
       "description": "Ring in the new year with our legendary celebration, featuring special performances."
     }
   ],
@@ -110,58 +110,58 @@
     {
       "name": "James Wilson",
       "location": "New York, USA",
-      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=80",
+      "image": "https://img.freepik.com/free-photo/young-man-sad-expression_1194-2826.jpg?semt=ais_hybrid&w=740",
       "rating": 5,
       "text": "The VIP treatment was beyond exceptional. From the private gaming rooms to the personalized service, everything was perfect."
     },
     {
       "name": "Sophia Chen",
       "location": "Singapore",
-      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&q=80",
+      "image": "https://i.pinimg.com/564x/87/7b/01/877b01f7092146efb33a6848e786d892.jpg",
       "rating": 5,
       "text": "I've visited luxury casinos worldwide, but the attention to detail and service here surpasses them all. Will definitely return!"
     },
     {
       "name": "Marcus Johnson",
       "location": "London, UK",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&q=80",
+      "image": "https://favim.com/pd/p/orig/2018/10/18/random-girl-sitemodel-Favim.com-6469773.png",
       "rating": 4.5,
       "text": "The blend of excitement and sophistication is perfectly balanced. The staff remembered my preferences from my last visit six months ago!"
     },
     {
       "name": "Elena Rodriguez",
       "location": "Madrid, Spain",
-      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&q=80",
+      "image": "https://i.pinimg.com/736x/cb/33/d8/cb33d80fe655e221ae05f41c8edd0cdb.jpg",
       "rating": 5,
       "text": "From the moment the concierge greeted me to the final checkout, my experience was flawless. The gaming floor is simply spectacular."
     }
   ],
   "spotlight": {
     "cuisine": {
-      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&q=80",
+      "image": "https://images.prismic.io/desplaines-rushstreetgaming/572a039d-8530-4465-a74f-39dffc0274ad_dining-hugos.jpg?auto=compress,format",
       "title": "Casino Cuisine"
     },
     "tournaments": {
-      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=600&fit=crop&q=80",
+      "image": "https://fliptheswitch.com/wp-content/uploads/2024/07/slot-tournament-rectangle-1024x635.webp",
       "title": "Exclusive Tournaments"
     },
     "highStakes": {
-      "image": "https://images.unsplash.com/photo-1606687957937-72c78b4a9d54?w=800&h=600&fit=crop&q=80",
+      "image": "https://www.vip-grinders.com/wp-content/uploads/2023/11/best-high-stakes-poker-sites.jpg",
       "title": "High-Stakes Tables"
     },
     "nightlife": {
-      "image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&q=80",
+      "image": "https://www.sandiego.org/-/media/images/sdta-site/articles/nightlife/1233x860/hotspots-1233x860.jpg?bc=white&h=500&w=700&c=1",
       "title": "Nightlife Hotspots"
     },
     "suites": {
-      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop&q=80",
+      "image": "https://dlq00ggnjruqn.cloudfront.net/prometheus/getImage?id=471509&width=940&height=530",
       "title": "Themed Suites"
     }
   },
   "vip": {
-    "image": "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?w=800&h=1000&fit=crop&q=80"
+    "image": "https://dlq00ggnjruqn.cloudfront.net/prometheus/getImage?id=463104&width=940&height=530"
   },
   "footer": {
-    "logo": "https://images.unsplash.com/photo-1635003913011-95971abba560?w=200&h=80&fit=crop&q=80&auto=format"
+    "logo": "https://lofrev.net/wp-content/photos/2016/08/random_logo_1.png"
   }
 }
