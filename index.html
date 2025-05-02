@@ -1,26 +1,737 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>casino-luxe-oasis-landing</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Casino Resorts Worldwide</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Experience world-class gaming, luxury accommodations, and exclusive VIP events at our luxury casino resorts worldwide. High-stakes tables, fine dining, and unforgettable entertainment.">
+  <meta name="keywords" content="luxury casino, high stakes, casino resort, VIP gaming, luxury hotel, fine dining, entertainment, poker tournament, slots, blackjack, roulette, baccarat">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yoursite.com">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/">
+  <meta property="og:title" content="Luxury Casino Resorts Worldwide">
+  <meta property="og:description" content="Experience world-class gaming, luxury accommodations, and exclusive VIP events at our luxury casino resorts worldwide.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1606744824163-985d376605aa?w=1200&h=630&fit=crop&q=80">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yoursite.com/">
+  <meta property="twitter:title" content="Luxury Casino Resorts Worldwide">
+  <meta property="twitter:description" content="Experience world-class gaming, luxury accommodations, and exclusive VIP events at our luxury casino resorts worldwide.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1606744824163-985d376605aa?w=1200&h=630&fit=crop&q=80">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "LodgingBusiness",
+          "position": 1,
+          "name": "The Bellagio",
+          "image": "https://images.unsplash.com/photo-1562516710-31a38a5c1091",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1024"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3600 Las Vegas Blvd S",
+            "addressLocality": "Las Vegas",
+            "addressRegion": "NV",
+            "postalCode": "89109",
+            "addressCountry": "USA"
+          }
+        },
+        {
+          "@type": "LodgingBusiness",
+          "position": 2,
+          "name": "Marina Bay Sands",
+          "image": "https://images.unsplash.com/photo-1565967511849-76a60a516170",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "938"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "10 Bayfront Ave",
+            "addressLocality": "Singapore",
+            "postalCode": "018956",
+            "addressCountry": "Singapore"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
 
-    <meta property="og:title" content="casino-luxe-oasis-landing" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<body class="font-montserrat bg-black text-white">
+  <!-- Header/Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="glass-effect py-4">
+      <nav class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+        <div class="site-logo flex items-center">
+          <!-- Logo will be inserted by JavaScript -->
+          <span class="site-name text-xl md:text-2xl font-playfair font-bold ml-2 text-white">Luxury Casino</span>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="#hero" class="text-white hover:text-yellow-300 transition-colors">Home</a></li>
+          <li><a href="#casinos" class="text-white hover:text-yellow-300 transition-colors">Casinos</a></li>
+          <li><a href="#features" class="text-white hover:text-yellow-300 transition-colors">Features</a></li>
+          <li><a href="#events" class="text-white hover:text-yellow-300 transition-colors">Events</a></li>
+          <li><a href="#gallery" class="text-white hover:text-yellow-300 transition-colors">Gallery</a></li>
+          <li><a href="#vip" class="text-white hover:text-yellow-300 transition-colors">VIP</a></li>
+        </ul>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="glass-effect md:hidden px-4 py-4 hidden">
+      <ul class="flex flex-col space-y-3">
+        <li><a href="#hero" class="block text-white hover:text-yellow-300 transition-colors py-2">Home</a></li>
+        <li><a href="#casinos" class="block text-white hover:text-yellow-300 transition-colors py-2">Casinos</a></li>
+        <li><a href="#features" class="block text-white hover:text-yellow-300 transition-colors py-2">Features</a></li>
+        <li><a href="#events" class="block text-white hover:text-yellow-300 transition-colors py-2">Events</a></li>
+        <li><a href="#gallery" class="block text-white hover:text-yellow-300 transition-colors py-2">Gallery</a></li>
+        <li><a href="#vip" class="block text-white hover:text-yellow-300 transition-colors py-2">VIP</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen bg-cover bg-center bg-fixed flex items-center justify-center">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="container mx-auto px-4 py-32 relative z-10 text-center">
+      <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"><span class="site-name">Royal Fortune</span></h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-100">Experience the epitome of luxury gaming and entertainment at our world-class casino resorts.</p>
+      
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+        <a href="#vip" class="bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-500 hover:to-yellow-300 text-white px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105">Join VIP Program</a>
+        <a href="#casinos" class="border-2 border-white hover:border-yellow-400 text-white hover:text-yellow-400 px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105">Explore Casinos</a>
+      </div>
+      
+      <div class="mt-12">
+        <p class="text-xl mb-4">Next VIP Event Begins In</p>
+        <div id="main-countdown" class="flex justify-center text-white bg-black bg-opacity-50 rounded-lg p-4 space-x-4">
+          <!-- Countdown will be inserted by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Top Casinos Section -->
+  <section id="casinos" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-2" data-aos="fade-up">World's Top Casinos</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Discover the most prestigious and luxurious casino destinations around the globe.</p>
+      
+      <div id="casino-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Casino cards will be inserted by JavaScript -->
+      </div>
+      
+      <div class="text-center mt-12">
+        <button id="load-more-casinos" class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-all">
+          Load More
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Spotlight: Casino Cuisine -->
+  <section class="py-16 bg-black spotlight-block" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+          <img src="" alt="Casino Cuisine" class="spotlight-image rounded-lg shadow-2xl w-full h-96 object-cover">
+        </div>
+        <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+          <h2 class="text-3xl font-playfair font-bold mb-4">Casino Cuisine</h2>
+          <p class="text-gray-400 mb-6">Experience the finest dining with our world-class celebrity chefs. Our restaurants offer exquisite cuisine from around the world, paired with rare vintages from our extensive wine cellars.</p>
+          <button class="bg-gradient-to-r from-yellow-600 to-yellow-400 text-white px-6 py-3 rounded-lg hover:from-yellow-500 hover:to-yellow-300 transition-all transform hover:scale-105">Explore Dining Options</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-2" data-aos="fade-up">Exclusive Features</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Indulge in our exceptional amenities designed for the most discerning guests.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-gray-800 rounded-lg p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-crown text-4xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold mb-4">VIP Treatment</h3>
+          <p class="text-gray-400">Exclusive access to private gaming rooms with personalized service and special perks.</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="bg-gray-800 rounded-lg p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-star text-4xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold mb-4">Luxury Accommodations</h3>
+          <p class="text-gray-400">Opulent suites featuring panoramic views, private butlers, and premium amenities.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="bg-gray-800 rounded-lg p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-glass-cheers text-4xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold mb-4">Entertainment</h3>
+          <p class="text-gray-400">World-class shows, concerts, and events featuring international celebrities.</p>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="bg-gray-800 rounded-lg p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-dice text-4xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold mb-4">High-Stakes Gaming</h3>
+          <p class="text-gray-400">Exclusive tables with unlimited betting limits for serious players.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Spotlight: Exclusive Tournaments -->
+  <section class="py-16 bg-black spotlight-block" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row-reverse items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-left">
+          <img src="" alt="Exclusive Tournaments" class="spotlight-image rounded-lg shadow-2xl w-full h-96 object-cover">
+        </div>
+        <div class="md:w-1/2 md:pr-12" data-aos="fade-right">
+          <h2 class="text-3xl font-playfair font-bold mb-4">Exclusive Tournaments</h2>
+          <p class="text-gray-400 mb-6">Join our high-stakes tournaments featuring unprecedented prize pools and opportunities to compete against professional players. From poker to baccarat, our events attract the elite gaming community from around the world.</p>
+          <button class="bg-gradient-to-r from-yellow-600 to-yellow-400 text-white px-6 py-3 rounded-lg hover:from-yellow-500 hover:to-yellow-300 transition-all transform hover:scale-105">View Tournament Schedule</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-2" data-aos="fade-up">Luxury Gallery</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Step into a world of opulence with our stunning venues and accommodations.</p>
+      
+      <div class="gallery-swiper swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <!-- Gallery images will be inserted by JavaScript -->
+        </div>
+        <div class="swiper-pagination mt-6"></div>
+        <div class="swiper-button-next text-white"></div>
+        <div class="swiper-button-prev text-white"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Spotlight: High-Stakes Tables -->
+  <section class="py-16 bg-black spotlight-block" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+          <img src="" alt="High-Stakes Tables" class="spotlight-image rounded-lg shadow-2xl w-full h-96 object-cover">
+        </div>
+        <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+          <h2 class="text-3xl font-playfair font-bold mb-4">High-Stakes Tables</h2>
+          <p class="text-gray-400 mb-6">Our exclusive VIP rooms offer privacy and premium gaming experiences for those who play at the highest levels. Enjoy personalized service, private dealers, and betting limits that match your ambition.</p>
+          <button class="bg-gradient-to-r from-yellow-600 to-yellow-400 text-white px-6 py-3 rounded-lg hover:from-yellow-500 hover:to-yellow-300 transition-all transform hover:scale-105">Request VIP Access</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-2" data-aos="fade-up">Upcoming Events</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Mark your calendar for our exclusive events and tournaments.</p>
+      
+      <div class="events-swiper swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <!-- Event 1 -->
+          <div class="swiper-slide">
+            <div class="event-card bg-gray-800 rounded-lg overflow-hidden shadow-xl h-full">
+              <img src="" alt="Million Dollar Poker Tournament" class="event-image w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="text-sm text-yellow-400 mb-2">June 15, 2025</div>
+                <h3 class="text-xl font-bold mb-2">Million Dollar Poker Tournament</h3>
+                <p class="text-gray-400 mb-4">Join the world's elite poker players for our annual high-stakes tournament.</p>
+                <div class="mb-4 px-4 py-2 bg-gray-700 rounded-lg">
+                  <p class="text-sm">Starts in</p>
+                  <div class="event-countdown text-yellow-400 font-bold" data-date="2025-06-15">Loading...</div>
+                </div>
+                <button class="w-full bg-gradient-to-r from-red-800 to-red-600 text-white py-2 rounded-lg hover:from-red-700 hover:to-red-500 transition-all">RSVP Now</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Event 2 -->
+          <div class="swiper-slide">
+            <div class="event-card bg-gray-800 rounded-lg overflow-hidden shadow-xl h-full">
+              <img src="" alt="Summer Gala Night" class="event-image w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="text-sm text-yellow-400 mb-2">July 21, 2025</div>
+                <h3 class="text-xl font-bold mb-2">Summer Gala Night</h3>
+                <p class="text-gray-400 mb-4">An exclusive evening of entertainment, fine dining, and special gaming events.</p>
+                <div class="mb-4 px-4 py-2 bg-gray-700 rounded-lg">
+                  <p class="text-sm">Starts in</p>
+                  <div class="event-countdown text-yellow-400 font-bold" data-date="2025-07-21">Loading...</div>
+                </div>
+                <button class="w-full bg-gradient-to-r from-red-800 to-red-600 text-white py-2 rounded-lg hover:from-red-700 hover:to-red-500 transition-all">RSVP Now</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Event 3 -->
+          <div class="swiper-slide">
+            <div class="event-card bg-gray-800 rounded-lg overflow-hidden shadow-xl h-full">
+              <img src="" alt="Celebrity Blackjack Showdown" class="event-image w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="text-sm text-yellow-400 mb-2">September 3, 2025</div>
+                <h3 class="text-xl font-bold mb-2">Celebrity Blackjack Showdown</h3>
+                <p class="text-gray-400 mb-4">Watch celebrities compete against our top dealers for charity prizes.</p>
+                <div class="mb-4 px-4 py-2 bg-gray-700 rounded-lg">
+                  <p class="text-sm">Starts in</p>
+                  <div class="event-countdown text-yellow-400 font-bold" data-date="2025-09-03">Loading...</div>
+                </div>
+                <button class="w-full bg-gradient-to-r from-red-800 to-red-600 text-white py-2 rounded-lg hover:from-red-700 hover:to-red-500 transition-all">RSVP Now</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Event 4 -->
+          <div class="swiper-slide">
+            <div class="event-card bg-gray-800 rounded-lg overflow-hidden shadow-xl h-full">
+              <img src="" alt="New Year's Eve Extravaganza" class="event-image w-full h-48 object-cover">
+              <div class="p-6">
+                <div class="text-sm text-yellow-400 mb-2">December 31, 2025</div>
+                <h3 class="text-xl font-bold mb-2">New Year's Eve Extravaganza</h3>
+                <p class="text-gray-400 mb-4">Ring in the new year with our legendary celebration, featuring special performances.</p>
+                <div class="mb-4 px-4 py-2 bg-gray-700 rounded-lg">
+                  <p class="text-sm">Starts in</p>
+                  <div class="event-countdown text-yellow-400 font-bold" data-date="2025-12-31">Loading...</div>
+                </div>
+                <button class="w-full bg-gradient-to-r from-red-800 to-red-600 text-white py-2 rounded-lg hover:from-red-700 hover:to-red-500 transition-all">RSVP Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-6"></div>
+        <div class="swiper-button-next text-white"></div>
+        <div class="swiper-button-prev text-white"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Spotlight: Nightlife Hotspots -->
+  <section class="py-16 bg-black spotlight-block" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row-reverse items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-left">
+          <img src="" alt="Nightlife Hotspots" class="spotlight-image rounded-lg shadow-2xl w-full h-96 object-cover">
+        </div>
+        <div class="md:w-1/2 md:pr-12" data-aos="fade-right">
+          <h2 class="text-3xl font-playfair font-bold mb-4">Nightlife Hotspots</h2>
+          <p class="text-gray-400 mb-6">When the sun sets, our world-class clubs and lounges come alive with celebrity DJs, exclusive performances, and handcrafted cocktails. Experience the energy and glamour of our legendary nightlife venues.</p>
+          <button class="bg-gradient-to-r from-yellow-600 to-yellow-400 text-white px-6 py-3 rounded-lg hover:from-yellow-500 hover:to-yellow-300 transition-all transform hover:scale-105">View Nightlife Schedule</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Signup Section -->
+  <section id="vip" class="py-20 bg-gray-900" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-2" data-aos="fade-up">Join Our VIP Program</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Unlock exclusive benefits, personalized service, and special offers.</p>
+      
+      <div class="flex flex-col md:flex-row bg-gray-800 rounded-lg overflow-hidden shadow-xl" data-aos="slide-up" data-aos-delay="200">
+        <div class="md:w-1/2">
+          <img src="" alt="VIP Membership" class="vip-image w-full h-full object-cover">
+        </div>
+        <div class="md:w-1/2 p-8 md:p-12">
+          <h3 class="text-2xl font-bold mb-6">VIP Membership Benefits</h3>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+              <span>Priority access to exclusive events and tournaments</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+              <span>Personalized concierge service and private gaming rooms</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+              <span>Complimentary luxury accommodations and fine dining</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+              <span>VIP-only rewards and special betting limits</span>
+            </li>
+          </ul>
+          
+          <form id="vip-form" class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium mb-1" for="vip-name">Full Name</label>
+              <input type="text" id="vip-name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" for="vip-email">Email Address</label>
+              <input type="email" id="vip-email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" for="vip-country">Country</label>
+              <select id="vip-country" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                <option value="">Select your country</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Japan">Japan</option>
+                <option value="Singapore">Singapore</option>
+                <option value="UAE">United Arab Emirates</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Preferred Casino</label>
+              <div class="space-y-2">
+                <label class="flex items-center">
+                  <input type="radio" name="casino" value="Bellagio" class="mr-2">
+                  <span>The Bellagio</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="casino" value="MarinaBay" class="mr-2">
+                  <span>Marina Bay Sands</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="casino" value="MonteCarlo" class="mr-2">
+                  <span>Monte Carlo Casino</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="casino" value="Wynn" class="mr-2">
+                  <span>Wynn Las Vegas</span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" id="vip-submit" class="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 text-white py-3 rounded-lg hover:from-yellow-500 hover:to-yellow-300 transition-all">Join VIP Program</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Confetti container for animation -->
+      <div id="confetti-container" class="fixed inset-0 pointer-events-none z-50"></div>
+    </div>
+  </section>
+  
+  <!-- Spotlight: Themed Rooms -->
+  <section class="py-16 bg-black spotlight-block" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+          <img src="" alt="Themed Suites" class="spotlight-image rounded-lg shadow-2xl w-full h-96 object-cover">
+        </div>
+        <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+          <h2 class="text-3xl font-playfair font-bold mb-4">Themed Luxury Suites</h2>
+          <p class="text-gray-400 mb-6">Stay in our opulent themed suites, each offering a unique experience from classic European elegance to modern Asian luxury. Every suite features premium amenities, stunning views, and personalized service.</p>
+          <button class="bg-gradient-to-r from-yellow-600 to-yellow-400 text-white px-6 py-3 rounded-lg hover:from-yellow-500 hover:to-yellow-300 transition-all transform hover:scale-105">Explore Suites</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-2" data-aos="fade-up">Guest Testimonials</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Read what our distinguished guests have to say about their experiences.</p>
+      
+      <div class="testimonials-swiper swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial bg-gray-800 rounded-lg p-8 h-full flex flex-col">
+              <div class="flex-grow">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-yellow-400">
+                    <img src="" alt="James Wilson" class="testimonial-image w-full h-full object-cover">
+                  </div>
+                </div>
+                <div class="star-rating mb-4 text-center">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="italic text-center mb-6">"The VIP treatment was beyond exceptional. From the private gaming rooms to the personalized service, everything was perfect."</p>
+              </div>
+              <div class="text-center">
+                <h4 class="font-bold">James Wilson</h4>
+                <p class="text-gray-400 text-sm">New York, USA</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial bg-gray-800 rounded-lg p-8 h-full flex flex-col">
+              <div class="flex-grow">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-yellow-400">
+                    <img src="" alt="Sophia Chen" class="testimonial-image w-full h-full object-cover">
+                  </div>
+                </div>
+                <div class="star-rating mb-4 text-center">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="italic text-center mb-6">"I've visited luxury casinos worldwide, but the attention to detail and service here surpasses them all. Will definitely return!"</p>
+              </div>
+              <div class="text-center">
+                <h4 class="font-bold">Sophia Chen</h4>
+                <p class="text-gray-400 text-sm">Singapore</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial bg-gray-800 rounded-lg p-8 h-full flex flex-col">
+              <div class="flex-grow">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-yellow-400">
+                    <img src="" alt="Marcus Johnson" class="testimonial-image w-full h-full object-cover">
+                  </div>
+                </div>
+                <div class="star-rating mb-4 text-center">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="italic text-center mb-6">"The blend of excitement and sophistication is perfectly balanced. The staff remembered my preferences from my last visit six months ago!"</p>
+              </div>
+              <div class="text-center">
+                <h4 class="font-bold">Marcus Johnson</h4>
+                <p class="text-gray-400 text-sm">London, UK</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 4 -->
+          <div class="swiper-slide">
+            <div class="testimonial bg-gray-800 rounded-lg p-8 h-full flex flex-col">
+              <div class="flex-grow">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-yellow-400">
+                    <img src="" alt="Elena Rodriguez" class="testimonial-image w-full h-full object-cover">
+                  </div>
+                </div>
+                <div class="star-rating mb-4 text-center">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="italic text-center mb-6">"From the moment the concierge greeted me to the final checkout, my experience was flawless. The gaming floor is simply spectacular."</p>
+              </div>
+              <div class="text-center">
+                <h4 class="font-bold">Elena Rodriguez</h4>
+                <p class="text-gray-400 text-sm">Madrid, Spain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-2" data-aos="fade-up">Frequently Asked Questions</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Find answers to common questions about our luxury casino experiences.</p>
+      
+      <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item mb-4">
+          <button class="faq-question w-full flex justify-between items-center bg-gray-800 p-6 rounded-lg focus:outline-none" aria-expanded="false" aria-controls="faq1">
+            <span class="font-bold text-left">What are the requirements to join the VIP program?</span>
+            <i class="faq-icon fas fa-plus text-yellow-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq1" class="faq-answer hidden bg-gray-700 p-6 rounded-b-lg mt-1">
+            <p>Our VIP program is invitation-based or available upon request with verification. Typically, we look for guests who demonstrate a certain level of play or spending at our casinos. Once approved, our VIP services team will customize a package based on your preferences.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="faq-item mb-4">
+          <button class="faq-question w-full flex justify-between items-center bg-gray-800 p-6 rounded-lg focus:outline-none" aria-expanded="false" aria-controls="faq2">
+            <span class="font-bold text-left">Do you offer complimentary accommodations?</span>
+            <i class="faq-icon fas fa-plus text-yellow-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq2" class="faq-answer hidden bg-gray-700 p-6 rounded-b-lg mt-1">
+            <p>Complimentary accommodations are available for our VIP members and high-value players based on play level, frequency of visits, and casino loyalty status. Please contact our VIP services department for specific details about your eligibility.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="faq-item mb-4">
+          <button class="faq-question w-full flex justify-between items-center bg-gray-800 p-6 rounded-lg focus:outline-none" aria-expanded="false" aria-controls="faq3">
+            <span class="font-bold text-left">What is the minimum age requirement?</span>
+            <i class="faq-icon fas fa-plus text-yellow-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq3" class="faq-answer hidden bg-gray-700 p-6 rounded-b-lg mt-1">
+            <p>The minimum age requirement varies by location. In most casinos in the United States, guests must be 21 years or older. In many international locations, the minimum age is 18. Valid government-issued photo identification is required at all times.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="faq-item mb-4">
+          <button class="faq-question w-full flex justify-between items-center bg-gray-800 p-6 rounded-lg focus:outline-none" aria-expanded="false" aria-controls="faq4">
+            <span class="font-bold text-left">How do I reserve a spot in upcoming tournaments?</span>
+            <i class="faq-icon fas fa-plus text-yellow-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq4" class="faq-answer hidden bg-gray-700 p-6 rounded-b-lg mt-1">
+            <p>Tournament reservations can be made through our website, mobile app, or by contacting our customer service team directly. VIP members have priority access to tournament registrations and can often secure spots through their personal concierge.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 5 -->
+        <div class="faq-item mb-4">
+          <button class="faq-question w-full flex justify-between items-center bg-gray-800 p-6 rounded-lg focus:outline-none" aria-expanded="false" aria-controls="faq5">
+            <span class="font-bold text-left">What payment methods are accepted?</span>
+            <i class="faq-icon fas fa-plus text-yellow-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faq5" class="faq-answer hidden bg-gray-700 p-6 rounded-b-lg mt-1">
+            <p>We accept all major credit cards, debit cards, digital wallets, bank transfers, and cryptocurrencies (at select locations). For high-value transactions, we also offer private banking services and casino credit lines for qualified guests.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <!-- About Column -->
+        <div>
+          <div class="footer-logo mb-4">
+            <!-- Logo will be inserted by JavaScript -->
+          </div>
+          <h3 class="site-name text-xl font-playfair font-bold mb-4">Luxury Casino</h3>
+          <p class="text-gray-400 mb-6">Experience the epitome of luxury gaming at our world-class casino resorts. From high-stakes tables to lavish accommodations, we offer unparalleled service and entertainment.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <i class="fab fa-twitter text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="#casinos" class="text-gray-400 hover:text-yellow-400 transition-colors">Our Casinos</a></li>
+            <li><a href="#events" class="text-gray-400 hover:text-yellow-400 transition-colors">Events & Tournaments</a></li>
+            <li><a href="#vip" class="text-gray-400 hover:text-yellow-400 transition-colors">VIP Membership</a></li>
+            <li><a href="#gallery" class="text-gray-400 hover:text-yellow-400 transition-colors">Gallery</a></li>
+            <li><a href="#faq" class="text-gray-400 hover:text-yellow-400 transition-colors">FAQ</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Responsible Gaming</a></li>
+          </ul>
+        </div>
+        
+        <!-- Newsletter -->
+        <div>
+          <h3 class="text-xl font-bold mb-6">Subscribe to Our Newsletter</h3>
+          <p class="text-gray-400 mb-4">Stay updated with our latest offers, events, and promotions.</p>
+          <form id="newsletter-form" class="space-y-3">
+            <div>
+              <input type="email" id="newsletter-email" placeholder="Your email address" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <button type="submit" id="newsletter-submit" class="bg-gradient-to-r from-yellow-600 to-yellow-400 text-white px-6 py-2 rounded-lg hover:from-yellow-500 hover:to-yellow-300 transition-all">Subscribe</button>
+          </form>
+          <p class="text-gray-500 text-sm mt-4">By subscribing, you agree to our Privacy Policy and consent to receive updates from us.</p>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 mb-4 md:mb-0">&copy; <span id="current-year">2025</span> <span class="site-name">Luxury Casino</span>. All rights reserved.</p>
+        <div class="flex space-x-4 text-sm">
+          <a href="#" class="text-gray-500 hover:text-yellow-400 transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-yellow-400 transition-colors">Terms of Service</a>
+          <a href="#" class="text-gray-500 hover:text-yellow-400 transition-colors">Responsible Gaming</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed right-8 bottom-8 bg-yellow-600 hover:bg-yellow-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-50 transition-all duration-300 hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  </footer>
+
+  <!-- Modal Container -->
+  <div id="modal-container" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-gray-900 rounded-lg w-full max-w-4xl mx-4 overflow-hidden">
+      <div id="modal-content">
+        <!-- Modal content will be inserted by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>

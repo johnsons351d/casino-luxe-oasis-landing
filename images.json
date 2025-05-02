@@ -1,0 +1,167 @@
+
+{
+  "header": {
+    "logo": "https://images.unsplash.com/photo-1635003913011-95971abba560?w=300&h=100&fit=crop&q=80&auto=format",
+    "hero": "https://images.unsplash.com/photo-1578174551474-4babdf84bf74?w=1920&h=1080&fit=crop&q=80"
+  },
+  "casinos": [
+    {
+      "name": "The Bellagio",
+      "image": "https://images.unsplash.com/photo-1562516710-31a38a5c1091?w=600&h=400&fit=crop&q=80",
+      "country": "USA",
+      "rating": 5,
+      "description": "World-famous luxury resort with iconic fountain shows and upscale amenities.",
+      "details": "Located on the Las Vegas Strip, The Bellagio is renowned for its elegance and sophistication. Features include a conservatory, fine art gallery, and world-class dining experiences."
+    },
+    {
+      "name": "Marina Bay Sands",
+      "image": "https://images.unsplash.com/photo-1565967511849-76a60a516170?w=600&h=400&fit=crop&q=80",
+      "country": "Singapore",
+      "rating": 5,
+      "description": "Architectural marvel with the world's largest rooftop infinity pool and panoramic views.",
+      "details": "This integrated resort features a 2,561-room hotel, a 1.3 million sq. ft convention center, a mall, museum, two theaters, restaurants, and the world's largest atrium casino with 500 tables and 1,600 slot machines."
+    },
+    {
+      "name": "Monte Carlo Casino",
+      "image": "https://images.unsplash.com/photo-1603199506016-b9a594b593c0?w=600&h=400&fit=crop&q=80",
+      "country": "Monaco",
+      "rating": 4.5,
+      "description": "Historic 19th-century casino offering European elegance and sophistication.",
+      "details": "Established in 1863, this Belle Époque architectural masterpiece houses Europe's most prestigious casino. It features ornate gaming rooms with frescoes, sculptures, and gold decorations."
+    },
+    {
+      "name": "Wynn Las Vegas",
+      "image": "https://images.unsplash.com/photo-1628527304948-06157ca5e3af?w=600&h=400&fit=crop&q=80",
+      "country": "USA",
+      "rating": 5,
+      "description": "Luxury resort featuring award-winning restaurants and a spectacular lake show.",
+      "details": "This Forbes Five-Star resort offers spacious rooms with floor-to-ceiling windows, signature restaurants, exciting entertainment, and a breathtaking three-acre lake with a choreographed water feature."
+    },
+    {
+      "name": "Caesars Palace",
+      "image": "https://images.unsplash.com/photo-1571169755272-b89129b55d29?w=600&h=400&fit=crop&q=80",
+      "country": "USA",
+      "rating": 4.5,
+      "description": "Iconic Roman-themed resort with celebrity chef restaurants and opulent gaming areas.",
+      "details": "A legendary Las Vegas resort inspired by the Roman Empire. Features include the Colosseum performance venue, Garden of the Gods Pool Oasis, and Forum Shops luxury retail space."
+    },
+    {
+      "name": "Crown Melbourne",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&q=80",
+      "country": "Australia",
+      "rating": 4.5,
+      "description": "Australia's premier integrated resort with world-class gaming, dining, and entertainment.",
+      "details": "Spanning the equivalent of two city blocks along the Yarra River, Crown Melbourne features three hotels, signature restaurants, luxury shopping, and one of the largest gaming floors in the Southern Hemisphere."
+    }
+  ],
+  "features": [
+    {
+      "icon": "crown",
+      "image": "https://images.unsplash.com/photo-1596838132731-3301c3fd4814?w=800&h=600&fit=crop&q=80"
+    },
+    {
+      "icon": "star",
+      "image": "https://images.unsplash.com/photo-1621275471769-e6aa344546d5?w=800&h=600&fit=crop&q=80"
+    },
+    {
+      "icon": "ticket",
+      "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&h=600&fit=crop&q=80"
+    },
+    {
+      "icon": "users",
+      "image": "https://images.unsplash.com/photo-1606744888344-493238951221?w=800&h=600&fit=crop&q=80"
+    }
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1606744824163-985d376605aa?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1586221266207-4bc9ee57e6cf?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1596838132663-69be99894bd1?w=1200&h=800&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=1200&h=800&fit=crop&q=80"
+  ],
+  "events": [
+    {
+      "title": "Million Dollar Poker Tournament",
+      "date": "2025-06-15",
+      "image": "https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=600&h=400&fit=crop&q=80",
+      "description": "Join the world's elite poker players for our annual high-stakes tournament."
+    },
+    {
+      "title": "Summer Gala Night",
+      "date": "2025-07-21",
+      "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=400&fit=crop&q=80",
+      "description": "An exclusive evening of entertainment, fine dining, and special gaming events."
+    },
+    {
+      "title": "Celebrity Blackjack Showdown",
+      "date": "2025-09-03",
+      "image": "https://images.unsplash.com/photo-1606761568539-8272a758e5b9?w=600&h=400&fit=crop&q=80",
+      "description": "Watch celebrities compete against our top dealers for charity prizes."
+    },
+    {
+      "title": "New Year's Eve Extravaganza",
+      "date": "2025-12-31",
+      "image": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop&q=80",
+      "description": "Ring in the new year with our legendary celebration, featuring special performances."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "James Wilson",
+      "location": "New York, USA",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=80",
+      "rating": 5,
+      "text": "The VIP treatment was beyond exceptional. From the private gaming rooms to the personalized service, everything was perfect."
+    },
+    {
+      "name": "Sophia Chen",
+      "location": "Singapore",
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&q=80",
+      "rating": 5,
+      "text": "I've visited luxury casinos worldwide, but the attention to detail and service here surpasses them all. Will definitely return!"
+    },
+    {
+      "name": "Marcus Johnson",
+      "location": "London, UK",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&q=80",
+      "rating": 4.5,
+      "text": "The blend of excitement and sophistication is perfectly balanced. The staff remembered my preferences from my last visit six months ago!"
+    },
+    {
+      "name": "Elena Rodriguez",
+      "location": "Madrid, Spain",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&q=80",
+      "rating": 5,
+      "text": "From the moment the concierge greeted me to the final checkout, my experience was flawless. The gaming floor is simply spectacular."
+    }
+  ],
+  "spotlight": {
+    "cuisine": {
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&q=80",
+      "title": "Casino Cuisine"
+    },
+    "tournaments": {
+      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=600&fit=crop&q=80",
+      "title": "Exclusive Tournaments"
+    },
+    "highStakes": {
+      "image": "https://images.unsplash.com/photo-1606687957937-72c78b4a9d54?w=800&h=600&fit=crop&q=80",
+      "title": "High-Stakes Tables"
+    },
+    "nightlife": {
+      "image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&q=80",
+      "title": "Nightlife Hotspots"
+    },
+    "suites": {
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop&q=80",
+      "title": "Themed Suites"
+    }
+  },
+  "vip": {
+    "image": "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?w=800&h=1000&fit=crop&q=80"
+  },
+  "footer": {
+    "logo": "https://images.unsplash.com/photo-1635003913011-95971abba560?w=200&h=80&fit=crop&q=80&auto=format"
+  }
+}
